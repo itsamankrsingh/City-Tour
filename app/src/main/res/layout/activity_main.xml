@@ -22,7 +22,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold" />
-    <Button
+
+        <Button
         android:id="@+id/general_ifo_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +42,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Places of Interest"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/reach_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How To Reach"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/about_bihar_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Bihar"
             android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>

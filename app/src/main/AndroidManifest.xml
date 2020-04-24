@@ -46,6 +46,27 @@
                 android:value=".MainActivity"/>
         </activity>
 
+        <activity
+            android:name=".HowToReach"
+            android:label="How To Reach"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".AboutBihar"
+            android:label="About Bihar"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+
     </application>
 
 </manifest>

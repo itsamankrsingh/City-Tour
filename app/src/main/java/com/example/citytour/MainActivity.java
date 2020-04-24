@@ -57,5 +57,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(touristIntent);
             }
         });
+
+        Button howToReach=findViewById(R.id.reach_button);
+        howToReach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent reachIntent=new Intent(MainActivity.this,HowToReach.class);
+                startActivity(reachIntent);
+            }
+        });
+
+        Button aboutBihar=findViewById(R.id.about_bihar_button);
+        aboutBihar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent biharIntent=new Intent(MainActivity.this,AboutBihar.class);
+                startActivity(biharIntent);
+            }
+        });
     }
 }
