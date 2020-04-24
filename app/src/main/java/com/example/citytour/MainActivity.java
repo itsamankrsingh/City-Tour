@@ -2,7 +2,9 @@ package com.example.citytour;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView t=(TextView)findViewById(R.id.text);
-        t.setText("Bhagalpur is a city of historical importance on the southern banks of the river Ganges in " +
+
+       t.setText("Bhagalpur is a city of historical importance on the southern banks of the river Ganges in " +
                 "the Indian state of Bihar." +
                 "It is the 3rd largest city of Bihar and also the headquarters of Bhagalpur district and Bhagalpur division. " +
                 "Known as Silk City, it is a major educational, commercial, and political centre, " +
@@ -26,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView img=(ImageView)findViewById(R.id.image);
         img.setImageResource(R.drawable.bhagalpur_tourist_map);
+
+        TextView general_info=findViewById(R.id.general_ifo_text);
+        general_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent generalIntent=new Intent(MainActivity.this,GenerlInformation.class);
+                startActivity(generalIntent);
+            }
+        });
 
 
     }
