@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView img=(ImageView)findViewById(R.id.image);
         img.setImageResource(R.drawable.bhagalpur_tourist_map);
 
-        TextView general_info=findViewById(R.id.general_ifo_text);
+        Button general_info=findViewById(R.id.general_ifo_button);
         general_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +40,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button demography=findViewById(R.id.demography_button);
+        demography.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent demoIntent=new Intent(MainActivity.this,Demography.class);
+                startActivity(demoIntent);
+            }
+        });
 
+        Button placesOfInterest=findViewById(R.id.tourist_button);
+        placesOfInterest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent touristIntent=new Intent(MainActivity.this,PlacesofInterest.class);
+                startActivity(touristIntent);
+            }
+        });
     }
 }

@@ -1,19 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:stretchColumns="1">
+
         <TableRow>
+
             <TextView
+                android:padding="16dp"
+                android:text="Coordinates"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="25°15′N 87°0′E"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
                 android:text="Country"
-                android:padding="16dp"/>
+                android:textStyle="bold" />
+
             <TextView
+                android:padding="16dp"
                 android:text="India"
-                android:padding="16dp"/>
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="State"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="Bihar"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="District"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="Bhagalpur"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Urban Agglomeration"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="Bhagalpur"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Municipal Corporation"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bhagalpur Municipal
+                                Corporation"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Area Total"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="342 km2 (132 sq mi)"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Area Rank"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="2nd(in Bihar)"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Population"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="4,10,210"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Postal Index Number"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="812001-81XXXX"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="STD Code"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="0641"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Vehicle Registration"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="BR-10"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="16dp"
+                android:text="Website"
+                android:textStyle="bold" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="bhagalpur.bih.nic.in"
+                android:textStyle="bold" />
         </TableRow>
     </TableLayout>
 

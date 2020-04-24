@@ -23,10 +23,24 @@
             android:layout_height="wrap_content"
             android:textStyle="bold" />
     <Button
-        android:id="@+id/general_ifo_text"
+        android:id="@+id/general_ifo_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="General Info"
         android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/demography_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Demography"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/tourist_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Places of Interest"
+            android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>
