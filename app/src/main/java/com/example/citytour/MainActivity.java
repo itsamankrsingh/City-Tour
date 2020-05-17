@@ -16,62 +16,54 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView t=(TextView)findViewById(R.id.text);
+        TextView t = (TextView) findViewById(R.id.text);
 
-       t.setText("Bhagalpur is a city of historical importance on the southern banks of the river Ganges in " +
-                "the Indian state of Bihar." +
-                "It is the 3rd largest city of Bihar and also the headquarters of Bhagalpur district and Bhagalpur division. " +
-                "Known as Silk City, it is a major educational, commercial, and political centre, " +
-                "and listed for development under the Smart City program, a joint venture between Government and industry. " +
-                "The Gangetic plains surrounding the city are very fertile and the main crops include" +
-                " rice, wheat, maize, barley, and oilseeds. " +
-                "The river is home to the Gangetic dolphin, the National Aquatic Animal of India," +
-                " and the Vikramshila Gangetic Dolphin Sanctuary is established near the town.");
+        t.setText(R.string.about_bhagalpur);
 
-        ImageView img=(ImageView)findViewById(R.id.image);
+        ImageView img = findViewById(R.id.image);
         img.setImageResource(R.drawable.bhagalpur_tourist_map);
 
-        Button general_info=findViewById(R.id.general_ifo_button);
+        Button general_info = findViewById(R.id.general_ifo_button);
         general_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent generalIntent=new Intent(MainActivity.this,GenerlInformation.class);
+                Intent generalIntent = new Intent(MainActivity.this, GenerlInformation.class);
                 startActivity(generalIntent);
             }
         });
 
-        Button demography=findViewById(R.id.demography_button);
+        Button demography = findViewById(R.id.demography_button);
         demography.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent demoIntent=new Intent(MainActivity.this,Demography.class);
+                Intent demoIntent = new Intent(MainActivity.this, Demography.class);
                 startActivity(demoIntent);
             }
         });
 
-        Button placesOfInterest=findViewById(R.id.tourist_button);
+        Button placesOfInterest = findViewById(R.id.tourist_button);
         placesOfInterest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent touristIntent=new Intent(MainActivity.this,PlacesofInterest.class);
+                Intent touristIntent = new Intent(MainActivity.this, PlacesofInterest.class);
                 startActivity(touristIntent);
             }
         });
 
-        Button howToReach=findViewById(R.id.reach_button);
+        Button howToReach = findViewById(R.id.reach_button);
         howToReach.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent reachIntent=new Intent(MainActivity.this,HowToReach.class);
+                Intent reachIntent = new Intent(MainActivity.this, HowToReach.class);
                 startActivity(reachIntent);
             }
         });
 
-        Button aboutBihar=findViewById(R.id.about_bihar_button);
+        Button aboutBihar = findViewById(R.id.about_bihar_button);
         aboutBihar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent biharIntent=new Intent(MainActivity.this,AboutBihar.class);
+                Intent biharIntent = new Intent(MainActivity.this, AboutBihar.class);
                 startActivity(biharIntent);
             }
         });

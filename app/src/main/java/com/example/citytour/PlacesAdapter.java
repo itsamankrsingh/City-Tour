@@ -32,11 +32,11 @@ public class PlacesAdapter extends ArrayAdapter<Places> {
         ImageView placeImage = listItemView.findViewById(R.id.touristImage);
         placeImage.setImageResource(currentPlace.getImageResourceId());
 
-        TextView placeNameText=listItemView.findViewById(R.id.placeName);
+        TextView placeNameText = listItemView.findViewById(R.id.placeName);
         placeNameText.setText(currentPlace.getPlaceName());
 
         TextView placeText = listItemView.findViewById(R.id.touristText);
-        placeText.setText(currentPlace.getPlace_description());
+        placeText.setText(currentPlace.getPlaceDescription());
 
         return listItemView;
     }

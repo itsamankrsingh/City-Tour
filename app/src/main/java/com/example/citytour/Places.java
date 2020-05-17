@@ -1,25 +1,25 @@
 package com.example.citytour;
 
 public class Places {
-    private int ImageResourceId;
-    private String place_description;
-    private String placeName;
+    private int mImageResourceId;
+    private int mPlaceDescriptionId;
+    private int mPlaceNameId;
 
-    public Places(int imageResourceId,String place_name,String placeDescription){
-        this.ImageResourceId=imageResourceId;
-        this.place_description=placeDescription;
-        this.placeName=place_name;
+    public Places(int imageResourceId, int placeName, int placeDescription) {
+        this.mImageResourceId = imageResourceId;
+        this.mPlaceDescriptionId = placeDescription;
+        this.mPlaceNameId = placeName;
     }
 
     public int getImageResourceId() {
-        return ImageResourceId;
+        return mImageResourceId;
     }
 
-    public String getPlace_description() {
-        return place_description;
+    public int getPlaceDescription() {
+        return mPlaceDescriptionId;
     }
 
-    public String getPlaceName(){
-        return placeName;
+    public int getPlaceName() {
+        return mPlaceNameId;
     }
 }

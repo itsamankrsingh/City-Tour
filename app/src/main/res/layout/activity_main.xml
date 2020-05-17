@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
@@ -24,38 +24,38 @@
             android:textStyle="bold" />
 
         <Button
-        android:id="@+id/general_ifo_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="General Info"
-        android:textStyle="bold"/>
+            android:id="@+id/general_ifo_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/general_info"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/demography_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Demography"
-            android:textStyle="bold"/>
+            android:text="@string/demography_btn"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tourist_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Places of Interest"
-            android:textStyle="bold"/>
+            android:text="@string/places_of_interest"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/reach_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="How To Reach"
-            android:textStyle="bold"/>
+            android:text="@string/how_to_reach_btn"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/about_bihar_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="About Bihar"
-            android:textStyle="bold"/>
+            android:text="@string/about_bihar_btn"
+            android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>
